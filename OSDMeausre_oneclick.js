@@ -165,11 +165,18 @@ class OSDMeasure {
      * @param {Object} options: object used to customize settings
      */
     isMeasuringMode = false; // Add this near the top of the class with other properties
+    createStartMeasuringButton() {
+    const button = document.createElement('button');
+    button.textContent = 'Start Measuring';
+    button.addEventListener('click', () => this.toggleMeasuringMode());
+    // Add styling as needed
+    this.viewer.element.appendChild(button);
+}
     constructor(viewer, options = {}) {
         this.viewer = viewer;
 
         this.processOptions(options);
-
+        this.createStartMeasuringButton();
         // pull in the two libraries
         this.overlay = viewer.fabricjsOverlay();
         this.fabricCanvas = this.overlay.fabricCanvas();
