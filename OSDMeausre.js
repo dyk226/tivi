@@ -1386,3 +1386,8 @@ class UI {
         style.setProperty("font-size", "0.9em");
     }
 }
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = OSDMeasure;
+} else {
+  window.OSDMeasure = OSDMeasure;
+}
