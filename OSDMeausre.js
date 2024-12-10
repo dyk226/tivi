@@ -120,6 +120,10 @@ class DexieWrapper {
  *
  * Requires OpenSeadragon, Fabric.js, and
  * the OpenSeadragon Fabric.js Overlay plugin
+
+ *This software is based on OSDMeasure by Nicholas Verrochi and Vidhya Sree N
+ *
+ *Modified by dyk226 for making slide viewer at school of medicine.
  */
 
 class OSDMeasure {
